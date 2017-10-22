@@ -1,0 +1,22 @@
+{
+  "name": "twitch-count-bot",
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "irc-framework": "^2.9.1",
+    "skateboard": "^2.0.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {},
+  "license": "MIT",
+  "keywords": [
+    "node"
+  ]
+}
