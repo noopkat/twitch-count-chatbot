@@ -4,6 +4,8 @@ A chatbot live coded with love from the TwitchCon GivePLZ Theater 2017 💜
 
 This is an example of a simple chatbot and HTML overlay working together to let viewers play the 'counting up' game in Twitch chat. Players need to count upwards by submitting numbers in order with no duplicates. See [this clip](https://www.youtube.com/watch?v=6TmW0ycjKPs) for an example of this phenomenon on Twitch 😁
 
+![counter gif screenshot](counter.gif)
+
 
 ## How to run this
 
