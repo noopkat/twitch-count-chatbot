@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+     h1 {
+       font-size: 100px;
+       color: rebeccapurple;
+       font-family: 'Comic Sans MS';
+     }
+     img {
+       display: none;
+     }
+    </style>
+  </head>
+  <body>
+    <h1 id="counter"></h1>
+    <img id="boo" src="boo.gif"/>
+    <img id="confetti" src="confetti.gif"/>
+
+   <script src="skateboard.min.js"></script>
+   <script>
+     const counter = document.getElementById('counter');
+     const boo = document.getElementById('boo');
+     const confetti = document.getElementById('confetti');
+     let firstLoad = false;
+
+     function flashGif(element, duration) {
+       element.style.display = 'inline';
+       setTimeout(() => {element.style.display = 'none'}, duration);
+     };
+
+     skateboard().on('data', (data) => {
+       const n = parseInt(data);
+       counter.textContent = n;
+
+       if (n && n % 10 === 0) {
+         flashGif(confetti, 10 *1000);
+       }
+      
+      if (!n && !firstLoad) {
+        flashGif(boo, 1000);
+      }
+
+      firstLoad = false;
+     })
+   </script>
+  </body>
+</html>
