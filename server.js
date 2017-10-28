@@ -1,4 +1,4 @@
-require('dotenv').config();
+const chalk = require('chalk');
 const IRC = require('irc-framework');
 const skateboard = require('skateboard');
 const inquirer = require('inquirer'); 
@@ -58,8 +58,8 @@ inquirer.prompt(questions).then((answers) => {
 
   botConnect().then(() => {
     botRegister().then((status) => {
-      console.log(status);
-      console.log('joined channel!');
+      console.log(chalk.green(status));
+      console.log(chalk.green('joined channel!'));
       skateboard({port: 3000}, (stream) => {
         socket = stream;
       });

@@ -5,8 +5,11 @@
   "scripts": {
     "start": "node server.js"
   },
+  "bin": {
+    "twitch-count-chatbot": "bin/twitch-count-chatbot"
+  },
   "dependencies": {
-    "dotenv": "^4.0.0",
+    "chalk": "^2.3.0",
     "express": "^4.15.3",
     "inquirer": "^3.3.0",
     "irc-framework": "^2.9.1",
