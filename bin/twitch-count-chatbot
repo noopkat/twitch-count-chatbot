@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const chalk = require('chalk');
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'test';
+
+console.log(`
+====================
+${chalk.blue.bold('TWITCH COUNT CHATBOT')}
+====================
+`);
+
+require('../server.js');
