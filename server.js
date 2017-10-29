@@ -12,7 +12,7 @@ let socket = null;
 
 const questions = [
   {
-    message: 'What is our twitch username?',
+    message: 'What is your twitch username?',
     name: 'username',
     type: 'input',
   },
